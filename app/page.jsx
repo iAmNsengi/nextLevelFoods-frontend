@@ -2,11 +2,19 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="text-center">
-      <p>Hello world</p>
+    <main>
+      <h1 style={{ color: "white", textAlign: "center" }}>
+        Time to get started!
+      </h1>
       <p>
-        <Link href="/about">About Us</Link>{" "}
+        <Link href={"/meals"}>Meals</Link>{" "}
       </p>
-    </div>
+      <p>
+        <Link href={"/meals/share"}>Share Meal</Link>{" "}
+      </p>{" "}
+      <p>
+        <Link href={"/community"}>Meals</Link>{" "}
+      </p>
+    </main>
   );
 }
