@@ -1,7 +1,9 @@
+import Link from "next/link";
 import React from "react";
+import logoImg from "@/assets/logo.png";
 
 const Meals = () => {
-  return <div>Meals page</div>;
+  return <p>Meals page</p>;
 };
 
 export default Meals;
