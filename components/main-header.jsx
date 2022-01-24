@@ -8,7 +8,8 @@ const MainHeader = () => {
   return (
     <header className={classes.header}>
       <Link href={"/"} className={classes.logo}>
-        <Image src={logoImg} alt="A plate with food on iit" /> Next Level Food
+        <Image src={logoImg} alt="A plate with food on it" priority /> Next
+        Level Food
       </Link>
       <nav className={classes.nav}>
         <ul>
