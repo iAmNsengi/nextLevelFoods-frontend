@@ -17,14 +17,7 @@ const MainHeader = () => {
       <nav className={classes.nav}>
         <ul>
           <li>
-            <Link
-              href={"/meals"}
-              className={
-                pathName.startsWith("/meals") ? classes.active : undefined
-              }
-            >
-              Browse Meals
-            </Link>
+            
           </li>
           <li>
             <Link
