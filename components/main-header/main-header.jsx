@@ -1,13 +1,11 @@
-"use client";
 import React from "react";
 import logoImg from "@/assets/logo.png";
 import Link from "next/link";
 import classes from "./main-header.module.css";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import NavLink from "./nav-link";
 
 const MainHeader = () => {
-  const pathName = usePathname();
   return (
     <header className={classes.header}>
       <Link href={"/"} className={classes.logo}>
@@ -17,15 +15,10 @@ const MainHeader = () => {
       <nav className={classes.nav}>
         <ul>
           <li>
-            
+            <NavLink href={"/meals"}>Browse Meals</NavLink>
           </li>
           <li>
-            <Link
-              href={"/community"}
-              className={pathName === "/community" ? classes.active : undefined}
-            >
-              Community
-            </Link>
+            <NavLink href={"/community"}>Community</NavLink>
           </li>
         </ul>
       </nav>
