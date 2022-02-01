@@ -12,3 +12,5 @@ const MealsGrid = ({ meals }) => {
     </ul>
   );
 };
+
+export default MealsGrid;
