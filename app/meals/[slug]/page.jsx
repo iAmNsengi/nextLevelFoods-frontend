@@ -1,7 +1,12 @@
-import React from "react";
+import classes from "./page.module.css";
 
 const Meal = () => {
-  return <div>Individual meal page</div>;
+  return (
+    <>
+      <header></header>
+      <main></main>
+    </>
+  );
 };
 
 export default Meal;
