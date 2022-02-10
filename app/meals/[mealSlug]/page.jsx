@@ -4,7 +4,7 @@ import { getMeal } from "@/lib/meals";
 
 const Meal = async ({ params }) => {
   const meal = await getMeal(params.mealSlug);
-  console.log(meal);
+  meal.instructions = meal.instructions.replace(/\n/g, "<br>");
 
   return (
     <>
@@ -17,7 +17,7 @@ const Meal = async ({ params }) => {
           <h1>{meal.title} </h1>
           <p className={classes.creator}>
             {" "}
-            by <a href={`mailto: ${"EMAIL"}`}>{meal.creator} </a>
+            by <a href={`mailto: ${meal.creator_email}`}>{meal.creator} </a>
           </p>
           <p className={classes.summary}>{meal.summary} </p>
         </div>
