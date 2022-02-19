@@ -35,6 +35,7 @@ const ImagePicker = ({ label, name }) => {
           accept="image/png, image/jpeg"
           name={name}
           onChange={handleImageChange}
+          required
         />
         <button
           className={classes.button}
@@ -43,6 +44,9 @@ const ImagePicker = ({ label, name }) => {
         >
           Pick an Image
         </button>
+        <p style={{ color: "red" }} hidden={pickedImage}>
+          Required
+        </p>
 
         {pickedImage && (
           <div className={classes.preview}>
